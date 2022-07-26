@@ -13,11 +13,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        print("-- Go To Objc --")
         let calculate = CalculateWrapper()
-        
         print(calculate.multiply(5, with: 44))
+        
+        print("-- Go To Objc then Go Back to Swift --")
+        calculate.greeting(withNumber: 100)
     }
-
-
 }
 
