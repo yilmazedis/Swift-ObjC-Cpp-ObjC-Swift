@@ -13,6 +13,7 @@
 		019E21362890535D00DC5C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019E21342890535D00DC5C75 /* Main.storyboard */; };
 		019E21382890535E00DC5C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019E21372890535E00DC5C75 /* Assets.xcassets */; };
 		019E213B2890535E00DC5C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019E21392890535E00DC5C75 /* LaunchScreen.storyboard */; };
+		019E21452890552D00DC5C75 /* CalculateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 019E21442890552D00DC5C75 /* CalculateWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		019E21372890535E00DC5C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019E213A2890535E00DC5C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		019E213C2890535E00DC5C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019E21432890552D00DC5C75 /* Swift-ObjC-Cpp-ObjC-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-ObjC-Cpp-ObjC-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		019E21442890552D00DC5C75 /* CalculateWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateWrapper.m; sourceTree = "<group>"; };
+		019E21462890554000DC5C75 /* CalculateWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateWrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		019E212D2890535D00DC5C75 /* Swift-ObjC-Cpp-ObjC-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				019E2142289054D400DC5C75 /* ObjCWrappers */,
 				019E212E2890535D00DC5C75 /* AppDelegate.swift */,
 				019E21302890535D00DC5C75 /* SceneDelegate.swift */,
 				019E21322890535D00DC5C75 /* ViewController.swift */,
@@ -65,6 +70,16 @@
 				019E213C2890535E00DC5C75 /* Info.plist */,
 			);
 			path = "Swift-ObjC-Cpp-ObjC-Swift";
+			sourceTree = "<group>";
+		};
+		019E2142289054D400DC5C75 /* ObjCWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				019E21462890554000DC5C75 /* CalculateWrapper.h */,
+				019E21442890552D00DC5C75 /* CalculateWrapper.m */,
+				019E21432890552D00DC5C75 /* Swift-ObjC-Cpp-ObjC-Swift-Bridging-Header.h */,
+			);
+			path = ObjCWrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +114,7 @@
 				TargetAttributes = {
 					019E212A2890535D00DC5C75 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -138,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019E21452890552D00DC5C75 /* CalculateWrapper.m in Sources */,
 				019E21332890535D00DC5C75 /* ViewController.swift in Sources */,
 				019E212F2890535D00DC5C75 /* AppDelegate.swift in Sources */,
 				019E21312890535D00DC5C75 /* SceneDelegate.swift in Sources */,
@@ -285,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -302,6 +320,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yilmaz.Swift-ObjC-Cpp-ObjC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-ObjC-Cpp-ObjC-Swift/ObjCWrappers/Swift-ObjC-Cpp-ObjC-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -329,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yilmaz.Swift-ObjC-Cpp-ObjC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-ObjC-Cpp-ObjC-Swift/ObjCWrappers/Swift-ObjC-Cpp-ObjC-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
