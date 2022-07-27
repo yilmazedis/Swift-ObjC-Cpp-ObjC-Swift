@@ -1,5 +1,6 @@
 # Swift-ObjC-Cpp-ObjC-Swift
 
+This read me is a scratch paper, I am going to prepare more advance.
 
 ## Swift-ObjC-Swift
 
