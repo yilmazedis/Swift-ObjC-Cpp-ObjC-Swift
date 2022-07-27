@@ -14,7 +14,8 @@
 		019E21382890535E00DC5C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019E21372890535E00DC5C75 /* Assets.xcassets */; };
 		019E213B2890535E00DC5C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019E21392890535E00DC5C75 /* LaunchScreen.storyboard */; };
 		019E21452890552D00DC5C75 /* CalculateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 019E21442890552D00DC5C75 /* CalculateWrapper.m */; };
-		019E2149289059CF00DC5C75 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E2148289059CF00DC5C75 /* Display.swift */; };
+		019E2149289059CF00DC5C75 /* DisplayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E2148289059CF00DC5C75 /* DisplayBridge.swift */; };
+		019E214D2891D3F400DC5C75 /* PersonWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019E214C2891D3F400DC5C75 /* PersonWrapper.mm */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,9 @@
 		019E21432890552D00DC5C75 /* AmongProgLang-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmongProgLang-Bridging-Header.h"; sourceTree = "<group>"; };
 		019E21442890552D00DC5C75 /* CalculateWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateWrapper.m; sourceTree = "<group>"; };
 		019E21462890554000DC5C75 /* CalculateWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateWrapper.h; sourceTree = "<group>"; };
-		019E2148289059CF00DC5C75 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		019E2148289059CF00DC5C75 /* DisplayBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBridge.swift; sourceTree = "<group>"; };
+		019E214C2891D3F400DC5C75 /* PersonWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PersonWrapper.mm; sourceTree = "<group>"; };
+		019E214E2891D40B00DC5C75 /* PersonWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonWrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +65,7 @@
 		019E212D2890535D00DC5C75 /* AmongProgLang */ = {
 			isa = PBXGroup;
 			children = (
-				019E21472890598D00DC5C75 /* Classes */,
+				019E21472890598D00DC5C75 /* Bridges */,
 				019E2142289054D400DC5C75 /* ObjCWrappers */,
 				019E212E2890535D00DC5C75 /* AppDelegate.swift */,
 				019E21302890535D00DC5C75 /* SceneDelegate.swift */,
@@ -78,19 +81,37 @@
 		019E2142289054D400DC5C75 /* ObjCWrappers */ = {
 			isa = PBXGroup;
 			children = (
-				019E21462890554000DC5C75 /* CalculateWrapper.h */,
-				019E21442890552D00DC5C75 /* CalculateWrapper.m */,
+				019E214B2891D38900DC5C75 /* ObjCpp */,
+				019E214A2891D36D00DC5C75 /* ObjC */,
 				019E21432890552D00DC5C75 /* AmongProgLang-Bridging-Header.h */,
 			);
 			path = ObjCWrappers;
 			sourceTree = "<group>";
 		};
-		019E21472890598D00DC5C75 /* Classes */ = {
+		019E21472890598D00DC5C75 /* Bridges */ = {
 			isa = PBXGroup;
 			children = (
-				019E2148289059CF00DC5C75 /* Display.swift */,
+				019E2148289059CF00DC5C75 /* DisplayBridge.swift */,
 			);
-			path = Classes;
+			path = Bridges;
+			sourceTree = "<group>";
+		};
+		019E214A2891D36D00DC5C75 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				019E21462890554000DC5C75 /* CalculateWrapper.h */,
+				019E21442890552D00DC5C75 /* CalculateWrapper.m */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		019E214B2891D38900DC5C75 /* ObjCpp */ = {
+			isa = PBXGroup;
+			children = (
+				019E214E2891D40B00DC5C75 /* PersonWrapper.h */,
+				019E214C2891D3F400DC5C75 /* PersonWrapper.mm */,
+			);
+			path = ObjCpp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019E2149289059CF00DC5C75 /* Display.swift in Sources */,
+				019E214D2891D3F400DC5C75 /* PersonWrapper.mm in Sources */,
+				019E2149289059CF00DC5C75 /* DisplayBridge.swift in Sources */,
 				019E21452890552D00DC5C75 /* CalculateWrapper.m in Sources */,
 				019E21332890535D00DC5C75 /* ViewController.swift in Sources */,
 				019E212F2890535D00DC5C75 /* AppDelegate.swift in Sources */,

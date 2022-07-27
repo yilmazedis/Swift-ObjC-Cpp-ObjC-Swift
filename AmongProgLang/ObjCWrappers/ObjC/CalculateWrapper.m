@@ -18,7 +18,7 @@
 }
 
 - (void) greetingWithNumber: (NSInteger) num {
-    Display* instance = [[Display alloc] init];
+    DisplayBridge* instance = [[DisplayBridge alloc] init];
     [instance show:num];
 }
 
