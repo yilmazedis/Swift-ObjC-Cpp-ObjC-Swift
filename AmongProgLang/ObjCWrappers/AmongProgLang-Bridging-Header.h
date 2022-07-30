@@ -5,3 +5,4 @@
 #import <Foundation/Foundation.h>
 #import "CalculateWrapper.h"
 #import "PersonWrapper.h"
+#import "SampleFunctions.h"
