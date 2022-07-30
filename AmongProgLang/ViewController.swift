@@ -27,6 +27,9 @@ class ViewController: UIViewController {
         
         print("-- Go To ObjCpp then Go Back to Swift --")
         calculate.greeting(withNumber: 500)
+        
+        print("-- Go Directly to C --")
+        print(rectangleArea(3, 5))
     }
 }
 

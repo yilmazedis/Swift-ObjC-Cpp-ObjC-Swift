@@ -16,6 +16,7 @@
 		019E21452890552D00DC5C75 /* CalculateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 019E21442890552D00DC5C75 /* CalculateWrapper.m */; };
 		019E2149289059CF00DC5C75 /* DisplayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E2148289059CF00DC5C75 /* DisplayBridge.swift */; };
 		019E214D2891D3F400DC5C75 /* PersonWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019E214C2891D3F400DC5C75 /* PersonWrapper.mm */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		01D20C402895C340009CE5EB /* SampleFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D20C3F2895C340009CE5EB /* SampleFunctions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		019E2148289059CF00DC5C75 /* DisplayBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBridge.swift; sourceTree = "<group>"; };
 		019E214C2891D3F400DC5C75 /* PersonWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PersonWrapper.mm; sourceTree = "<group>"; };
 		019E214E2891D40B00DC5C75 /* PersonWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonWrapper.h; sourceTree = "<group>"; };
+		01D20C3E2895C340009CE5EB /* SampleFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFunctions.h; sourceTree = "<group>"; };
+		01D20C3F2895C340009CE5EB /* SampleFunctions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SampleFunctions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		019E212D2890535D00DC5C75 /* AmongProgLang */ = {
 			isa = PBXGroup;
 			children = (
+				01D20C3D2895C2D1009CE5EB /* C */,
 				019E21472890598D00DC5C75 /* Bridges */,
 				019E2142289054D400DC5C75 /* ObjCWrappers */,
 				019E212E2890535D00DC5C75 /* AppDelegate.swift */,
@@ -112,6 +116,15 @@
 				019E214C2891D3F400DC5C75 /* PersonWrapper.mm */,
 			);
 			path = ObjCpp;
+			sourceTree = "<group>";
+		};
+		01D20C3D2895C2D1009CE5EB /* C */ = {
+			isa = PBXGroup;
+			children = (
+				01D20C3E2895C340009CE5EB /* SampleFunctions.h */,
+				01D20C3F2895C340009CE5EB /* SampleFunctions.c */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D20C402895C340009CE5EB /* SampleFunctions.c in Sources */,
 				019E214D2891D3F400DC5C75 /* PersonWrapper.mm in Sources */,
 				019E2149289059CF00DC5C75 /* DisplayBridge.swift in Sources */,
 				019E21452890552D00DC5C75 /* CalculateWrapper.m in Sources */,
