@@ -13,6 +13,7 @@
 @interface PersonWrapper: NSObject
 - (NSString*) printName;
 - (void) greetingWithNumber: (NSInteger) num;
+- (void) sumOfThree: (NSInteger) a :(NSInteger) b :(NSInteger) c;
 @end
 
 

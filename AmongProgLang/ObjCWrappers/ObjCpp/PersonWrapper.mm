@@ -11,6 +11,8 @@
 // #import "ProjectName-Swift.h"
 #import "AmongProgLang-Swift.h"
 
+#include "SampleCppFunctions.h"
+
 @implementation PersonWrapper
 
 - (NSString*) printName {
@@ -20,5 +22,10 @@
 - (void) greetingWithNumber: (NSInteger) num {
     DisplayBridge* instance = [[DisplayBridge alloc] init];
     [instance show:num];
+}
+
+- (void) sumOfThree: (NSInteger) a :(NSInteger) b :(NSInteger) c {
+    SampleCppFunctions sample;
+    sample.sumOfThree((int) a, (int) b, (int) c);
 }
 @end
