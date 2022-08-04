@@ -8,6 +8,8 @@
 #ifndef PersonWrapper_h
 #define PersonWrapper_h
 
+#import <Foundation/Foundation.h>
+
 @class DisplayBridge;
 
 @interface PersonWrapper: NSObject
