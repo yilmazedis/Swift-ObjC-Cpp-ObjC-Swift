@@ -1,6 +1,9 @@
 # Swift-ObjC-Cpp-ObjC-Swift
 
-This read me is a scratch paper, I am going to prepare more advance.
+## Do you want to use a project written in C/C++, ObjC/ObjC++ in your swift project? This structure is exactly what you was looking for. 
+Travel between C/C++ <-> ObjC/ObjC++ <-> Swift
+
+### This read me is a scratch paper, I am going to prepare more advance.
 
 ```swift
 print("-- Go To ObjC --")
