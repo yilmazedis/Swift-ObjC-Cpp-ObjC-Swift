@@ -2,6 +2,29 @@
 
 This read me is a scratch paper, I am going to prepare more advance.
 
+```swift
+print("-- Go To ObjC --")
+let calculate = CalculateWrapper()
+print(calculate.multiply(5, with: 44))
+
+print("-- Go To ObjC Then Go Back to Swift --")
+calculate.greeting(withNumber: 100)
+
+print("-- Go To ObjCpp --")
+let person = PersonWrapper()
+let name = person.printName()
+print(name!)
+
+print("-- Go To ObjCpp Then Go Back to Swift --")
+calculate.greeting(withNumber: 500)
+
+print("-- Go Directly to C --")
+print(rectangleArea(3, 5))
+
+print("-- Go To Cpp mm Extension Then Go Back to Swift --")
+person.sum(ofThree: 3, 4, 5)
+```
+
 ## Swift-ObjC-Swift
 
 ### Important Parts
