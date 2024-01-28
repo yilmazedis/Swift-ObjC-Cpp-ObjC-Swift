@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         
         print("-- Go To Cpp mm Extension Then Go Back to Swift --")
         person.sum(ofThree: 3, 4, 5)
+        
+        print("-- Go Directly to Cpp --")
+        print(String(cString: cppToSwiftTest()))
     }
 }
 

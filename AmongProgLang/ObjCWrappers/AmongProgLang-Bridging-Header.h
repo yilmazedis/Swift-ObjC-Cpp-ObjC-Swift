@@ -6,3 +6,4 @@
 #import "CalculateWrapper.h"
 #import "PersonWrapper.h"
 #import "SampleFunctions.h"
+#import "CppToSwift.h"
