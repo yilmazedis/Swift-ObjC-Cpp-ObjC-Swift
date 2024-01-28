@@ -46,3 +46,7 @@ Don't forget to add this flag -fcxx-modules to .mm file
 [Check it](https://stackoverflow.com/a/34283236/7657265)
 
 <img width="776" alt="Screen Shot 2022-07-27 at 23 34 32" src="https://user-images.githubusercontent.com/15719990/181366962-dcb62898-7f8e-443d-ab4a-86e1d01132e0.png">
+
+## Cpp-Swift Directly through C wrapper
+<img width="344" alt="Screenshot 2024-01-28 at 14 42 13" src="https://github.com/yilmazedis/Swift-ObjC-Cpp-ObjC-Swift/assets/15719990/61a14dae-4783-4336-8f24-6fe58076f965">
+
